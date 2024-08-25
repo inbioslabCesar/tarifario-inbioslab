@@ -7,7 +7,6 @@ const ProductRow = ({ name, price2, time, info, tube, method }) => {
   return (
     <div className={style.product}>
       <div>
-        <button>Car</button>
       </div>
       <div className={style.name}>
         <span>{name}</span>

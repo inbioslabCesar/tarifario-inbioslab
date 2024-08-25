@@ -41,20 +41,14 @@
     cursor: pointer;
 }
 .abrir{
-    padding: 10px 20px;
-    background-image: linear-gradient(to bottom right, #375da5, #33c2d4);
     border-radius: 30px;
-    font-size: 20px;
-    color: #fff;
     text-decoration: none;
-    box-shadow: 0 0 3px 3px rgba(55, 93, 165, .05);
     transition: .3s;
     cursor: pointer;
     
     
 }
 .abrir:hover{
-    box-shadow: 0 0 15px 10px rgba(55, 93, 165, .2);
     transform: translatey(-2px);
 }
 .info, .name, .tube, .method{
