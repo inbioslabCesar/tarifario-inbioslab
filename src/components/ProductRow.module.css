@@ -11,13 +11,13 @@
  
 }
 .name{
-    width: 70%;
+    width: 64%;
     font-weight: bold;
     text-transform: uppercase;
     font-size: .9rem;
 }
 .price, .time, .info{
-    width: 10%;
-    font-size: .7rem;
+    width: 12%;
+    font-size: .65rem;
 }
 
