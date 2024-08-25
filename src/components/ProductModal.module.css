@@ -28,6 +28,7 @@
     background-image: linear-gradient(to bottom right, #375da5, #33c2d4);
     border-radius: 5px;
     box-shadow:0 0 3px 3px rgba(0, 0, 0, .05);
+    padding: 3rem;
 }
 .modalContent{
     position: relative;
@@ -37,7 +38,8 @@
 .modalContent .cerrar{
     position: absolute;
     top: 0;
-    right: 0;
+    font-size: 2rem;
+    right: 50px;
     cursor: pointer;
 }
 .abrir{
