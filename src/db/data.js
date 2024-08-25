@@ -464,7 +464,7 @@ export const data = [
     price2: 25,
     tube: "tapa rojo ó amarillo",
     info: "se recomienda ayuno de 8 horas",
-    time: "",
+    time: "1 hora",
     quantity: 1,
   },
   {
