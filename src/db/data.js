@@ -1931,4 +1931,16 @@ export const data = [
     time: "4 días",
     quantity: 1,
   },
+  {
+    id: 164,
+    name: "recuento de hematies",
+    sample: "sangre total",
+    method: "manual",
+    price1: 15,
+    price2: 10,
+    tube: "tubo lila",
+    info: "no requiere ayuno previo",
+    time: "1 hora",
+    quantity: 1,
+  },
 ];
