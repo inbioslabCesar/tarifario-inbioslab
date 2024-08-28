@@ -1561,7 +1561,7 @@ export const data = [
   },
   {
     id: 133,
-    name: "nameen directo-koh(hongos)",
+    name: "raspado de piel directo-koh hongos-acaros",
     sample: "raspado de piel",
     method: "microscopia/manual",
     price1: 30,
@@ -1917,6 +1917,18 @@ export const data = [
     tube: "tapa celeste",
     info: "No es necesario estar en ayunas",
     time: "1 hora",
+    quantity: 1,
+  },
+  {
+    id: 163,
+    name: "cultivo de secreción faringea",
+    sample: "secreción fraringe",
+    method: "CULTIVO / MICROSCOPIA / MANUAL",
+    price1: 50,
+    price2: 30,
+    tube: "tubo esteril de vidrio + lamina",
+    info: "EN AYUNAS, NO ASEO BUCAL, NI INGESTA DE LIQUIDOS NI SOLUCIONES DESINFECTANTES. NO ANTIBIÓTICOS 3 DIAS ANTES DEL EXÁMEN.",
+    time: "4 días",
     quantity: 1,
   },
 ];

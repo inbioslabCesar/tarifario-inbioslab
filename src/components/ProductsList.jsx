@@ -8,7 +8,7 @@ const ProductsList = ({ products }) => {
   const [search, setSearch] = useState("");
   const productsFiltered = search
     ? products.filter((item) =>
-        item.name.toLowerCase().startsWith(search.toLowerCase())
+        item.name.toLowerCase().includes(search.toLowerCase())
       )
     : products;
 
