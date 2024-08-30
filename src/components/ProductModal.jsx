@@ -1,7 +1,14 @@
 import React, { useState } from "react";
 import style from "./ProductModal.module.css";
 
-const ProductModal = ({ name, info, tube,method, showModal, setShowModal }) => {
+const ProductModal = ({
+  name,
+  info,
+  tube,
+  method,
+  showModal,
+  setShowModal,
+}) => {
   return (
     <>
       <div className={style.container}>
@@ -22,8 +29,7 @@ const ProductModal = ({ name, info, tube,method, showModal, setShowModal }) => {
                 <h1 className={style.name}>{name}</h1>
                 <p className={style.info}>PRE-ANALITICA: {info}</p>
                 <p className={style.tube}>TIPO DE TUBO: {tube}</p>
-                <p className={style.method}>METODOLOGIA: { method}</p>
-
+                <p className={style.method}>METODOLOGIA: {method}</p>
               </div>
             </div>
           </div>

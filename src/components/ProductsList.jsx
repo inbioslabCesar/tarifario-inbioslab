@@ -4,22 +4,10 @@ import style from "./ProductsList.module.css";
 import logo from "../assets/logo.png";
 
 const ProductsList = ({ products }) => {
-  console.log(products);
   const [search, setSearch] = useState("");
-  const productsFiltered = search
-    ? products.filter((item) =>
-        item.name.toLowerCase().includes(search.toLowerCase())
-      )
-    : products;
 
-  const productsRender =
-    productsFiltered.length > 0 ? (
-      productsFiltered.map((product) => (
-        <ProductRow key={product.id} {...product} />
-      ))
-    ) : (
-      <p>No hay Examenes</p>
-    );
+  const productsFiltered = filterProductsByName(products, search);
+  const productsRender = renderProducts(productsFiltered);
 
   return (
     <div className={style.wrapper}>
@@ -41,6 +29,24 @@ const ProductsList = ({ products }) => {
       <div className={style.products}>{productsRender}</div>
     </div>
   );
+};
+
+const filterProductsByName = (products, search) => {
+  if (!search) return products;
+
+  const lowerCaseSearch = search.toLowerCase();
+
+  return products.filter((item) =>
+    item.name.toLowerCase().includes(lowerCaseSearch)
+  );
+};
+
+const renderProducts = (products) => {
+  if (products.length < 0) return <p>No hay Examenes</p>;
+
+  return products.map((product) => (
+    <ProductRow key={product.id} {...product} />
+  ));
 };
 
 export default ProductsList;

@@ -6,8 +6,7 @@ const ProductRow = ({ name, price2, time, info, tube, method }) => {
   const [showModal, setShowModal] = useState(false);
   return (
     <div className={style.product}>
-      <div>
-      </div>
+      <div></div>
       <div className={style.name}>
         <span>{name}</span>
       </div>
