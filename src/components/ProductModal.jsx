@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import style from "./ProductModal.module.css";
 
 const ProductModal = ({
