@@ -1991,4 +1991,16 @@ export const data = [
     time: "5 días aprox.",
     quantity: 1,
   },
+  {
+    id: 169,
+    name: "perfil reumatoideo cuantificado",
+    sample: "suero",
+    method: "inmunoflorescencia",
+    price1: 60,
+    price2: 60,
+    tube: "tubo rojo ó amarillo",
+    info: "no requiere ayuno previo.",
+    time: "2 horas.",
+    quantity: 1,
+  },
 ];
