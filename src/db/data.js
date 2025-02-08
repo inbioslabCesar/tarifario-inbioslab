@@ -2005,7 +2005,7 @@ export const data = [
   },
   {
     id: 170,
-    name: "daea-s",
+    name: "dhea-s",
     sample: "suero",
     method: "elisa",
     price1: 70,
