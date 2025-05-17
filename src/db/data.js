@@ -2089,4 +2089,18 @@ export const data = [
     time: "5 dias",
     quantity: 1,
   },
+  {
+    id: 177,
+    name: "cultivo de semen ",
+    sample: "semen",
+    method: "cultivo",
+    price1: 45,
+    price2: 20,
+    tube: "frasco esteril tapa verde",
+    info: "COLECTAR LA MUESTRA EN FRASCO ESTÉRIL. NO ANTIBIOTICOS 03 DIAS PREVIOS AL examen. HIGIENE PREVIA DE LOS GENITALES, REMITIR LA MUESTRA LO ANTES POSIBLE AL LABORATORIO (O MANTENER EN REFRIGERACIÓN 2 a 8°C HASTA SU ENVÍO)",
+    time: "3 dias",
+    quantity: 1,
+  },
 ];
+
+urocultivo
