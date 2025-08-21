@@ -1,30 +1,17 @@
 [
   {
     "id": 1,
-    "title": "Promoción Hemograma Completo",
-    "description": "Obtén un Hemograma Completo a solo S/ 15.00 por tiempo limitado.",
-    "price": 15.00,
-    "image": "https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=400&q=80"
+    "title": "La ACTH, o hormona adrenocorticotrópica,",
+    "description": "Obtén un ACTH a solo S/ 50.00 por tiempo limitado.",
+    "price": 50.00,
+    "image": "/tarifario-inbioslab/promos/promo1.png"
   },
   {
     "id": 2,
     "title": "Perfil Lipídico",
     "description": "Descuento especial en Perfil Lipídico: colesterol y triglicéridos por S/ 25.00.",
-    "price": 25.00,
-    "image": "https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=400&q=80"
+    "price": 50.00,
+    "image": "/tarifario-inbioslab/promos/promo2.png"
   },
-  {
-    "id": 3,
-    "title": "Glucosa en Sangre",
-    "description": "Controla tu glucosa por solo S/ 10.00. ¡Promoción válida todo el mes!",
-    "price": 10.00,
-    "image": "https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&fit=crop&w=400&q=80"
-  },
-  {
-    "id": 4,
-    "title": "Examen de Orina Completo",
-    "description": "Examen de orina completo a S/ 12.00. Ideal para chequeos preventivos.",
-    "price": 12.00,
-    "image": "https://images.unsplash.com/photo-1454023492550-5696f8ff10e1?auto=format&fit=crop&w=400&q=80"
-  }
+
 ]
