@@ -4,13 +4,13 @@
     "title": "La ACTH, o hormona adrenocorticotrópica",
     "description": "Obtén un ACTH a solo S/ 50.00 por tiempo limitado.",
     "price": 50.00,
-    "image": "/tarifario-inbioslab/promos/promo1.png"
+    "image": "/tarifario-inbioslab/promos/promo2.png"
   },
   {
     "id": 2,
     "title": "La DHEA, o deshidroepiandrosterona",
     "description": "Descuento especial en DHEA: solo por S/ 50.00.",
     "price": 50.00,
-    "image": "/tarifario-inbioslab/promos/promo2.png"
+    "image": "/tarifario-inbioslab/promos/promo1.png"
   }
 ]
