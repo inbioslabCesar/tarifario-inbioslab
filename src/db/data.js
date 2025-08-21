@@ -1,7 +1,10 @@
+// Tarifario de pruebas de laboratorio clínico
+// Cada objeto representa una prueba con sus características principales
+// Si el archivo crece, se recomienda dividir por categorías o validar la estructura
 export const data = [
   {
     id: 1,
-    name: "A.N.C.A ANTI-NEUTROFILOS",
+    name: "A.N.C.A ANTI-NEUTROFILOS prolactina",
     sample: "suero",
     method: "IFI - Inmunofluorescencia Indirecta",
     price1: 180,
@@ -2025,7 +2028,7 @@ export const data = [
     tube: "tubo lila",
     info: "no requiere ayuno previo.",
     time: "2 horas.",
-    quantity: 1,
+    quantity: 1
   },
   {
     id: 172,
@@ -2037,33 +2040,31 @@ export const data = [
     tube: "tubo rojo ó amarillo",
     info: "no requiere ayuno previo.",
     time: "2 horas.",
-    quantity: 1,
+    quantity: 1
   },
   {
     id: 173,
     name: "block cell-biopsia",
-    sample:
-      "MUESTRAS FRESCAS (LIQ. SINOVIAL, PLEURAL, ASCITICO, ETC), TOMADAS POR MEDICO TRATANTE. ORDEN MÉDICA OBLIGATORIA.",
+    sample: "MUESTRAS FRESCAS (LIQ. SINOVIAL, PLEURAL, ASCITICO, ETC), TOMADAS POR MEDICO TRATANTE. ORDEN MÉDICA OBLIGATORIA.",
     method: "microscopia/manual",
     price1: 140,
     price2: 90,
     tube: "FRASCO ESTERIL",
     info: "MUESTRAS FRESCAS (LIQ. SINOVIAL, PLEURAL, ASCITICO, ETC), TOMADAS POR MEDICO TRATANTE. TRANSPORTAR MUESTRAS A LA BREVEDAD POSIBLE Y EN CADENA DE FRÍO. SE REQUIERE MÍNIMO 60ML PARA UN BUEN REPORTE.",
     time: "7 dias aprox.",
-    quantity: 1,
+    quantity: 1
   },
   {
     id: 174,
     name: "citoquimico-liquido",
-    sample:
-      "MUESTRAS FRESCAS (LIQ. SINOVIAL, PLEURAL, ASCITICO, ETC), TOMADAS POR MEDICO TRATANTE. ORDEN MÉDICA OBLIGATORIA.",
+    sample: "MUESTRAS FRESCAS (LIQ. SINOVIAL, PLEURAL, ASCITICO, ETC), TOMADAS POR MEDICO TRATANTE. ORDEN MÉDICA OBLIGATORIA.",
     method: "citoquimico/manual",
     price1: 60,
     price2: 35,
     tube: "FRASCO ESTERIL",
     info: "DEBE SER UNA MUESTRA TOMADA POR EL MÉDICO TRATANTE (PARACENTESIS), TODA MUESTRA CON PRESENCIA DE COÁGULO Y/O LIQUIDOS HEMORRAGICOS SERAN RECHAZADAS.",
     time: "1 dia",
-    quantity: 1,
+    quantity: 1
   },
   {
     id: 175,
@@ -2075,7 +2076,7 @@ export const data = [
     tube: "tapa rojo ó amarillo",
     info: "SE RECOMIENDA AYUNO DE 8 HORAS ANTES DE LA PRUEBA.",
     time: "2 horas",
-    quantity: 1,
+    quantity: 1
   },
   {
     id: 176,
@@ -2087,7 +2088,7 @@ export const data = [
     tube: "tapa rojo ó amarillo",
     info: "SE RECOMIENDA AYUNO DE 8 HORAS ANTES DE LA PRUEBA.",
     time: "5 dias",
-    quantity: 1,
+    quantity: 1
   },
   {
     id: 177,
@@ -2099,7 +2100,7 @@ export const data = [
     tube: "frasco esteril tapa verde",
     info: "COLECTAR LA MUESTRA EN FRASCO ESTÉRIL. NO ANTIBIOTICOS 03 DIAS PREVIOS AL examen. HIGIENE PREVIA DE LOS GENITALES, REMITIR LA MUESTRA LO ANTES POSIBLE AL LABORATORIO (O MANTENER EN REFRIGERACIÓN 2 a 8°C HASTA SU ENVÍO)",
     time: "3 dias",
-    quantity: 1,
+    quantity: 1
   },
   {
     id: 178,
@@ -2111,6 +2112,6 @@ export const data = [
     tube: "tapa rojo ó amarillo",
     info: "SE RECOMIENDA AYUNO DE 8 HORAS ANTES DE LA PRUEBA.",
     time: "5 a 6 dias",
-    quantity: 1,
-  },
+    quantity: 1
+  }
 ];
