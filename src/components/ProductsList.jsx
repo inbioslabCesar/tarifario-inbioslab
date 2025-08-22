@@ -1,6 +1,5 @@
 import { jsPDF } from "jspdf";
 import { dataSorted as data } from "../db/data";
-// ...existing code...
 import { useState, useEffect } from "react";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -12,6 +11,8 @@ import AddCircleIcon from '@mui/icons-material/AddCircle';
 import logo from "../assets/logo.png";
 
 const ProductsList = ({ products }) => {
+  // Estado para mostrar/desplegar el botón de WhatsApp
+  const [showWhatsapp, setShowWhatsapp] = useState(false);
   // Estado para mostrar el selector en móvil
   const [showSelectorMobile, setShowSelectorMobile] = useState(false);
   // Carrusel de promociones dinámico
@@ -581,6 +582,36 @@ const ProductsList = ({ products }) => {
           </div>
         </div>
       )}
+    {/* Botón WhatsApp fijo abajo derecha */}
+    {/* Botón WhatsApp colapsable y más arriba */}
+    <div className="fixed bottom-20 right-4 z-50 flex flex-col items-end">
+      {!showWhatsapp ? (
+        <button
+          className="bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg p-2 flex items-center transition-all"
+          style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.18)" }}
+          onClick={() => setShowWhatsapp(true)}
+          aria-label="Abrir WhatsApp"
+        >
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="w-8 h-8" />
+        </button>
+      ) : (
+        <a
+          href="https://wa.me/51945241682"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-green-500 hover:bg-green-600 text-white rounded-full shadow-lg flex items-center gap-2 px-4 py-2 transition-all"
+          style={{ boxShadow: "0 2px 8px rgba(0,0,0,0.18)" }}
+        >
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" className="w-6 h-6" />
+          <span className="font-bold">WhatsApp</span>
+          <button
+            className="ml-2 bg-white text-green-600 rounded-full p-1 hover:bg-gray-100 border border-green-500"
+            onClick={e => { e.preventDefault(); setShowWhatsapp(false); }}
+            aria-label="Cerrar WhatsApp"
+          >✕</button>
+        </a>
+      )}
+    </div>
     </div>
   );
 }
