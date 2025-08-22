@@ -1,5 +1,5 @@
 import React from "react";
-import { FaTimes } from "react-icons/fa";
+import { FaTimes, FaStar } from "react-icons/fa";
 
 const LAB_INFO = {
   name: "Laboratorio Clínico Inbioslab",
@@ -36,9 +36,19 @@ const CartModal = ({ open, onClose, cart, logo, onExportPDF, onClearCart, onChan
         <h3 className="text-lg font-semibold mb-4 text-blue-700">Cotización</h3>
         <div className="grid gap-3 mb-4 overflow-y-auto" style={{maxHeight: '40vh'}}>
           {cart.map((item, idx) => (
-            <div key={item.id || idx} className="flex flex-col md:flex-row md:items-center justify-between bg-blue-50 rounded-lg shadow p-3 border border-blue-200">
+            <div
+              key={item.id || idx}
+              className={
+                `flex flex-col md:flex-row md:items-center justify-between rounded-lg shadow p-3 border ${item.type === "promo" ? "bg-yellow-50 border-yellow-300" : "bg-blue-50 border-blue-200"}`
+              }
+            >
               <div className="flex-1 flex flex-col md:flex-row md:items-center gap-2">
-                <span className="font-semibold text-gray-800 md:w-56">{String(item.name).toUpperCase()}</span>
+                <span className="font-semibold text-gray-800 md:w-56 flex items-center gap-2">
+                  {item.type === "promo" && (
+                    <FaStar className="text-yellow-500" style={{fontSize: '0.9em'}} />
+                  )}
+                  {String(item.name).toUpperCase()}
+                </span>
                 <div className="flex items-center gap-2">
                   <button className="px-2 py-1 bg-white border border-gray-300 rounded hover:bg-blue-100" onClick={() => onChangeQty(item.id, Math.max((item.qty || 1) - 1, 1))}>-</button>
                   <span className="font-bold text-blue-700">{item.qty || 1}</span>

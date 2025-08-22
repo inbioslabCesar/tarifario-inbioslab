@@ -328,7 +328,7 @@ export const data = [
   },
   {
     id: 28,
-    name: "	PROLACTINA POOL",
+    name: "PROLACTINA POOL",
     sample: "suero",
     method: "quimioluminiscencia",
     price1: 120,
@@ -340,7 +340,7 @@ export const data = [
   },
   {
     id: 29,
-    name: "	BIOPSIA PIEZA OPERATORIA <= 1 MM. (L7)",
+    name: "BIOPSIA PIEZA OPERATORIA <= 1 MM. (L7)",
     sample: "BIOPSIA",
     method: "MICROSCOPIA / MANUAL",
     price1: 150,
@@ -988,7 +988,7 @@ export const data = [
   },
   {
     id: 84,
-    name: " recuento de reticulocitos",
+    name: "recuento de reticulocitos",
     sample: "sangre total",
     method: "microscopia manual",
     price1: 25,
@@ -2023,8 +2023,8 @@ export const data = [
     name: "acth",
     sample: "plasma",
     method: "elisa",
-    price1: 80,
-    price2: 55,
+    price1: 60,
+    price2: 40,
     tube: "tubo lila",
     info: "no requiere ayuno previo.",
     time: "2 horas.",
@@ -2113,5 +2113,22 @@ export const data = [
     info: "SE RECOMIENDA AYUNO DE 8 HORAS ANTES DE LA PRUEBA.",
     time: "5 a 6 dias",
     quantity: 1
-  }
+  },
+  {
+    id: 179,
+    name: "vih 1/2 elisa",
+    sample: "SUERO",
+    method: "elisa",
+    price1: 60,
+    price2: 35,
+    tube: "tapa rojo ó amarillo",
+    info: "SE RECOMIENDA AYUNO DE 8 HORAS ANTES DE LA PRUEBA.",
+    time: "1 dia",
+    quantity: 1
+  },
 ];
+// Ordena alfabéticamente y reasigna id consecutivo
+export const dataSorted = data
+  .slice()
+  .sort((a, b) => a.name.localeCompare(b.name))
+  .map((item, idx) => ({ ...item, id: idx + 1 }));
